@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="353.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528.project.AddCustomerController">
+   <children>
+      <Button fx:id="returnButton" layoutX="227.0" layoutY="326.0" mnemonicParsing="false" onAction="#returnManagerMenu" style="-fx-background-color: yellow;" text="Return" />
+      <Label layoutX="85.0" layoutY="63.0" style="-fx-border-color: black;" text="Add Customer">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="20.0" layoutY="130.0" text="Enter the username of the customer:" textFill="WHITE" />
+      <Label layoutX="20.0" layoutY="200.0" text="Enter the password of the customer: " textFill="WHITE" />
+      <TextField fx:id="user" layoutX="20.0" layoutY="160.0" onAction="#addCustomer" />
+      <TextField fx:id="pass" layoutX="20.0" layoutY="235.0" onAction="#addCustomer" />
+      <Label fx:id="confirm" layoutX="20.0" layoutY="290.0" textFill="WHITE" />
+      <Button layoutX="69.0" layoutY="326.0" mnemonicParsing="false" onAction="#addCustomer" style="-fx-background-color: yellow;" text="Add Customer" />
+   </children>
+</AnchorPane>
